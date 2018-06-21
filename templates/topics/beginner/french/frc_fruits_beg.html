@@ -1,0 +1,52 @@
+ {% extends 'base.html' %}
+
+{%block content%}
+ <style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+  </style>
+  
+  <p align="right">debutant &gt;&gt; Francais &gt;&gt; les fruits</p>
+<center><br><span style="font-size:90px; font-weight:bold; color:Gold"> &#1421;Les fruits&#1421;</span></br></center>
+<table>{% load static %}
+<tr>
+<td><img src="{% static 'fruits/Apple.png' %}" alt = "apple"></img></td>
+<td><img src="{% static 'fruits/Banana.png' %}" alt = "banana"></img></td>
+<td><img src="{% static 'fruits/Cherries.png' %}" alt = "cherries"></img></td>
+<td><img src="{% static 'fruits/Grapes.png' %}" alt = "grapes"></img></td>
+<td><img src="{% static 'fruits/Lemon.png' %}" alt = "lemon"></img></td>
+<td><img src="{% static 'fruits/Lime.png' %}" alt = "lime"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>Pomme</h2></a></center></td>
+<td><center><a style="color:yellow"><h2>Banane</h2></a></center></td>
+<td><center><a style="color:red"><h2>Cerises</h2></a></center></td>
+<td><center><a style="color:purple"><h2>Raisins</h2></a></center></td>
+<td><center><a style="color:yellow"><h2>Citron</h2></a></center></td>
+<td><center><a style="color:green"><h2>Citron vert</h2></a></center></td>
+</tr>
+<tr>
+<td><img src="{% static 'fruits/OrangeFruit.png' %}" alt = "orange"></img></td>
+<td><img src="{% static 'fruits/Peach.png' %}" alt = "peach"></img></td>
+<td><img src="{% static 'fruits/Pear.png' %}" alt = "pear"></img></td>
+<td><img src="{% static 'fruits/Pineapple.png' %}" alt = "pineapple"></img></td>
+<td><img src="{% static 'fruits/Strawberry.png' %}" alt = "strawberry"></img></td>
+<td><img src="{% static 'fruits/Watermelon.png' %}" alt = "watermelon"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:orange"><h2>Orange</h2></a></center></td>
+<td><center><a style="color:gold"><h2>Peche</h2></a></center></td>
+<td><center><a style="color:green"><h2>Poire</h2></a></center></td>
+<td><center><a style="color:orange"><h2>Ananas</h2></a></center></td>
+<td><center><a style="color:red"><h2>Fraise</h2></a></center></td>
+<td><center><a style="color:green"><h2>Pasteque</h2></a></center></td>
+</tr>
+</table>
+
+<h3><a href="https://youtu.be/KOYONV1GjrI" target="_blank"> regardez une video sur les fruits</a></h3>
+
+
+   {% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<center><br><span style="font-size:80px; font-weight:bold; color:yellow"> Welcome to Our Language Learning Website</span></br>
+{% if user.is_authenticated %}
+             <p class="display-4">Hello, {{ user.username }}</p>
+             
+             <a href="{% url 'logout' %}">Logout</a><br>
+{% else %}
+         <a href="{% url 'login' %}" class="list-group-item">
+             Login
+            </a>
+            
+{% endif %}
+</center>
+{%endblock content%}

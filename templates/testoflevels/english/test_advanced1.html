@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<script language="JavaScript">
+<!-- Hide JavaScript from Java-Impaired Browsers
+l=0;
+function dataBase(test) {
+     var counter=0;
+     if (test.q1[1].checked) {counter++;}
+     if (test.q2[0].checked) {counter++;}
+     if (test.q3[1].checked) {counter++;}
+     if (test.q4[0].checked) {counter++;}
+     if (test.q5[0].checked) {counter++;}
+
+   if (l==0)
+     {
+   counter=counter;
+       }
+       else
+       {
+       counter=0;
+       }
+       l=l+1;
+     document.test.display.value = counter;
+}
+
+// End Hiding Script -->
+</script>
+</head><body bgcolor="#a6caf0">
+<center>
+<h1>Listening Test for Dialog 1</h1>
+<form method="post" name="test">
+<!--ENCTYPE="text/plain"-->
+<hr width="75">
+<h3>1. They first met four or five years ago</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q1" value="11" type="radio">True
+<input name="q1" value="12" type="radio">False
+</strong></p>
+</div><hr>
+<h3>2. They met for the second time about five years ago.</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q2" value="21" type="radio">True
+<input name="q2" value="22" type="radio">False
+</strong></p>
+</div><hr>
+<h3>3. Enrico was sitting at a table chatting to some friends.</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q3" value="31" type="radio">True
+<input name="q3" value="32" type="radio">False
+</strong></p>
+</div><hr>
+<h3>4. Enrico spoke first in the bar.</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q4" value="41" type="radio">True 
+<input name="q4" value="42" type="radio">False
+</strong></p>
+</div><hr>
+<h3>5. Carolina was surprised that Enrico recognised her after so many years.</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q5" value="51" type="radio">True
+<input name="q5" value="52" type="radio">False
+</strong></p>
+</div><hr>
+ 
+</strong></p>
+</div><hr>
+<table>
+<tbody><tr>
+<td colspan="3"><div align="center"><p><strong><hr>Press button &nbsp; to finish test:</strong></p></div></td>
+</tr>
+<tr align="center">
+<td><strong><input name="check" onclick="dataBase(this.form)" value=" Check " type="button"></strong></td>
+<td><strong><textarea cols="6" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
+ 
+</tr>
+</tbody></table>
+<input name='back' type='button' value='Home' onclick='javascript:history.go(-6);'>
+</form></center>
+</body></html>
+
+{% endblock %}

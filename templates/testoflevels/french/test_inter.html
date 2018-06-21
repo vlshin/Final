@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<script language="JavaScript">
+<!-- Hide JavaScript from Java-Impaired Browsers
+l=0;
+function dataBase(test) {
+     var counter=0;
+     if (test.q1[0].checked) {counter++;}
+     if (test.q2[1].checked) {counter++;}
+     if (test.q3[0].checked) {counter++;}
+     if (test.q4[1].checked) {counter++;}
+     if (test.q5[2].checked) {counter++;}
+
+   if (l==0)
+     {
+   counter=counter;
+       }
+       else
+       {
+       counter=0;
+       }
+       l=l+1;
+     document.test.display.value = counter;
+}
+
+// End Hiding Script -->
+</script>
+</head><body bgcolor="#a6caf0">
+<center>
+<h1>French Level Test</h1>
+<h2> Lisez ces phrases et choisissez la reponse correcte</h2>
+<form method="post" name="test">
+<!--ENCTYPE="text/plain"-->
+<hr width="75">
+
+<h3>1.  <strong>
+<input name="q1" value="11" type="radio">Es-tu Francais?
+<input name="q1" value="12" type="radio">Tu es francais?
+<input name="q1" value="13" type="radio">Tu avais ete francais.
+</strong></p>
+</div><hr>
+<h3>2.<strong>
+<input name="q2" value="21" type="radio">celles-ci est ma trousse.
+<input name="q2" value="22" type="radio">Celle-ci est ma trousse.
+<input name="q2" value="23" type="radio">Ceux-ci est ma trousse.
+</strong></p>
+</div><hr>
+<h3>3. <strong>
+<input name="q3" value="31" type="radio">Je regarde la TV pour relaxer.
+<input name="q3" value="32" type="radio">Je regarde la TV pour de relaxer.
+<input name="q3" value="33" type="radio">Je regarde la TV de relaxer.
+</strong></p>
+</div><hr>
+<h3>4. <strong>
+<input name="q4" value="41" type="radio">Je serai etre un veterinaire quand je grandirai. 
+<input name="q4" value="42" type="radio">Je serai veterinaire quand je grandirai. 
+<input name="q4" value="43" type="radio">Je suis veterinaire quand je grandirai.
+</strong></p>
+</div><hr>
+<h3>5.<strong>
+<input name="q5" value="51" type="radio">Je fus ete au parc hier.
+<input name="q5" value="52" type="radio">Je vais au parc hier.
+<input name="q5" value="53" type="radio">Je fus au parc hier.
+</strong></p>
+</div><hr>
+ 
+</strong></p>
+</div><hr>
+<table>
+<tbody><tr>
+<td colspan="3"><div align="center"><p><strong><hr>Appuie sur le boutton &nbsp; Pour finir le test :</strong></p></div></td>
+</tr>
+<tr align="center">
+<td><strong><input name="check" onclick="dataBase(this.form)" value=" Check " type="button"></strong></td>
+<td><strong><textarea cols="6" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
+ 
+</tr>
+</tbody></table>
+<input name='back' type='button' value='Home' onclick='javascript:history.go(-5);'>
+</form></center>
+</body></html>
+
+{% endblock %}

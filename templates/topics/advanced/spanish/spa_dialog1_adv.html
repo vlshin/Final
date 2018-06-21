@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{%block content%}
+  <style> 
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+
+  </style>
+<p align="right">Superior >> Espanol >> Dialogo 1</p>
+<center><span style="font-size:90px; font-weight:bold; color:Purple">&#9885;Dialogo&#9885;</span></center>
+<center><h2><span style="color: darkblue">Las puertas retorcidas</span></h2>
+<h4><span style="color: red">Escuche atentamente e intente comprender el dialogo.</h3>
+{% load static %}
+<audio controls>
+<td><source src="{% static 'audio/retorcidas.mp3' %}" type ="audio/mpeg">
+</audio><center>
+<br></br>
+<span style="color: darkblue"><h3> Guion del audio</h3></span>
+<table >
+<tr><h4><i>Dios mio, Enrique. Mira a nuestro alrededor. Estamos en un cementerio! </i></h3></tr>
+<tr><h4>El viento continua silbando: <i> Enrique... Enrique... </i>.</h3></tr>
+<tr><h4>Hay tumbas por todos lados.  Hay lapidas de todos los tamanos, de todo tipo.</h3></tr>
+<tr><h4><i>Que significa este cementerio?</i>, dice Enrique con un aire preocupado.</h3></tr>
+<tr><h4><i>No me gusta. Quiero regresar </i> , dice como un nino consentido.</h3></tr>
+<tr><h4><i>Quieres regresar?  No me hagas reir, Enrique. Adonde quieres regresar exactamente?.</i></h3></tr>
+<tr><h4><i>Yo no se, pero...</i> </h3></tr>
+<tr><h4><i>Oh, callate. Tu sabes muy bien que </i></h3></tr>
+<tr><h4>Interrumpo mi respuesta, porque de inmediato, mi vista es atraida por una lapida que no es como las otras.</h3></tr>
+<tr><h4>En efecto, su epitafio es bastante curioso, como se puede ver por la siguiente inscripcion:</h3></tr>
+<tr><h4><i>El no espero que la puerta retorcida se abriera sola. Peor para el! Se quedara aqui para siempre.</i></h3></tr>
+<tr><h4>Nos miramos.<i> Que significa eso?Quien no espero?</i></h3></tr>
+</table>
+<table>
+<td><center><a href="listening1-spa"; style="font-size:30px; color:red"><h2>Prueba de escucha</h2></a></center></td>
+</table>
+{%endblock content%}

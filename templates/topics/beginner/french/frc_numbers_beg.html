@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+</style>
+</head>
+<body>
+
+  <p align="right">Beginner &gt;&gt; French &gt;&gt; Numbers</p>
+ <center><br><span style="font-size:90px; font-weight:bold; color:Gold"> &#1421;Nombres&#1421;</span></br></center>
+ <br></br>
+<center><br><span style="font-size:35px; font-weight:bold; color:navy"> Numero de 1 a 10</span></br>
+ <br><span style="font-size:25px; font-weight:bold; color:navy">Ceux-ci sont aussi appeles nombres cardinaux.</span></br>
+<br><span style="font-size:25px; font-weight:bold; color:navy">  Puisqu'ils expriment la quantite, ils sont principalement utilises en comptant en anglais. </span></br>
+ <br><span style="font-size:25px; font-weight:bold; color:navy">Les nombres cardinaux ont de nombreux usages, parmi ceux-ci: parler de l'age d'une personne, partager des numeros de telephone, ou dire a quelqu'un dans quelle annee vous etes ne. </span></br>
+</center>
+<br></br>
+ <center><br></br>
+ 
+ <table>
+ <td>
+
+ {% load static %}
+<tr>
+<td><img src="{% static 'numbers/1.png' %}" alt = "1"></img></td>
+<td><img src="{% static 'numbers/2.png' %}" alt = "2"></img></td>
+<td><img src="{% static 'numbers/3.png' %}" alt = "3"></img></td>
+<td><img src="{% static 'numbers/4.png' %}" alt = "4"></img></td>
+<td><img src="{% static 'numbers/5.png' %}" alt = "5"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:skyblue"><h2>1 - un </h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>2 - deux</h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>3 - trois<h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>4 - quatre</h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>5 - cinq</h2></a></center></td>
+</tr>
+<tr>
+<td><img src="{% static 'numbers/6.png' %}" alt = "6"></img></td>
+<td><img src="{% static 'numbers/7.png' %}" alt = "7"></img></td>
+<td><img src="{% static 'numbers/8.png' %}" alt = "8"></img></td>
+<td><img src="{% static 'numbers/9.png' %}" alt = "9"></img></td>
+<td><img src="{% static 'numbers/10.png' %}" alt = "10"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:skyblue"><h2>6 - six </h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>7 - sept</h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>8 - huit<h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>9 - neuf</h2></a></center></td>
+<td><center><a style="color:skyblue"><h2>10 - dix</h2></a></center></td>
+</tr>
+ </center></table>
+ <center><br><span style="font-size:35px; font-weight:bold; color:navy"> Numbers in word from 10 to 20</span></br></center>
+ <table><center>
+ <td><a style="color:mediumslateblue">  
+ <h2>11-onze </h2>
+ <h2> 12-douze </h2>
+ <h2> 13-treize </h2>
+ <h2> 14-quatorze </h2>
+ <h2> 15-quinze </h2>
+ </a></td>
+ <td><a style="color:mediumslateblue">
+ <h2> 16-seize </h2>
+ <h2> 17-dix-sept </h2>
+ <h2> 18-dix-huit </h2>
+ <h2> 19-dix-neuf </h2>
+ <h2> 20-vingt </h2>
+ </a></td>
+ </table>
+ <h3><a href="https://youtu.be/s5-0V8wIbxw" target="_blank"> Watch the video to learn numbers </a></h3>
+</center>
+ </body>
+ </html>
+ {% endblock %}

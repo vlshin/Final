@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{%block content%}
+  <style> 
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+
+  </style>
+<p align="right">Advanced >> English >> Dialog 1</p>
+<center><span style="font-size:90px; font-weight:bold; color:Purple">&#9885;Dialog&#9885;</span></center>
+<center><h2><span style="color: darkblue">Interview with an Actress</span></h2>
+<h4><span style="color: red">Listen carefully and try to understand the dialog.</h3>
+{% load static %}
+<audio controls>
+<td><source src="{% static 'audio/actress.mp3' %}" type ="audio/mpeg">
+</audio><center>
+<br></br>
+<span style="color: darkblue"><h3> Script of the audio</h3></span>
+<table >
+<tr><h4><i>Dennis:</i> Joining me this evening on Theatre Hour is the recent winner of the New York Times Actress of the Year award Jenny Longton. She's currently appearing on Broadway in the spectacular musical, Daydreams. Jenny, welcome to the show.</h3></tr>
+<tr><h4><i>Jenny:</i> Thank you Dennis. It's a pleasure to be here.</h3></tr>
+<tr><h4><i>Dennis:</i> Your life has been rather hectic recently, wouldn't you say?</h3></tr>
+<tr><h4><i>Jenny:</i> Oh yes, I haven't had time to take a breath, honestly, for about six months.</h3></tr>
+<tr><h4><i>Dennis:</i> Tell us what you're up to.</h3></tr>
+<tr><h4><i>Jenny:</i> Well, Daydreams has been running for three months now but I've been working non-stop since I began working on my new movie.</h3></tr>
+<tr><h4><i>Dennis:</i> Ah yes, this is quite a departure for you, isn't it?</h3></tr>
+<tr><h4><i>Jenny:</i> In as much as I have never worked in cinema before, yes it is. I have found it a very rewarding experience and...</h3></tr>
+<tr><h4><i>Dennis:</i> ...very different challenges compared to the theatre work</h3></tr>
+<tr><h4><i>Jenny:</i> Oh, totally. But that's been the great thing. From the audition to when we began shooting, it's just been a steep learning curve for me. You don't have time to sit down and think "what am I doing here? I belong in a little theatre in Kansas"</h3></tr>
+<tr><h4><i>Dennis:</i> Tell us something about this movie.</h3></tr>
+<tr><h4><i>Jenny:</i> Well, everyone knows Tom Cruise plays the lead role but it's a team performance to tell you the truth. Yeah, Tom is our quarterback but he has great support all across the field...</h3></tr>
+<tr><h4><i>Dennis:</i> What position are you in this football team?</h3></tr>
+<tr><h4><i>Jenny:</i> Me? Oh..I carry the sponge to the injured guys. No, seriously, I play one of Tom's wives. I don't want to give too much away, to spoil things for the listeners, but Tom isn't exactly a good guy in this movie. He treats me pretty bad and plays around with my head a fair bit</h3></tr>
+<tr><h4><i>Dennis:</i> What was Tom Cruise like to work with?</h3></tr>
+<tr><h4><i>Jenny:</i> Oh listen! You know you get all these up and coming actors and people who just say, who just gush away at the big stars and say how wonderful they are, but with Tom it's been great. He put me at ease from the first take and you don't ever feel star struck or....well, that's not exactly true. I was a little in awe on day one. We were out in the desert in Arizona and I just wanted to ask Tom for his autograph. What an amateur. But he makes it simple and that was the key for me.</h3></tr>
+<tr><h4><i>Dennis:</i> Now you say you don't want to give too much away but you could give us a little taster, couldn't you?</h3></tr>
+<tr><h4><i>Jenny:</i> Oh sure...this is a superb, dark mystery in the great tradition of cinema. Leaves you guessing right until the final frame. A lotta twists and turns in the plot. And, I gotta say, some great cinematography too. I just mentioned Arizona but we've been moving around in a lot of great areas like Texas, Montana, Oregon and so on.</h3></tr>
+<tr><h4><i>Dennis:</i> Hmmm...sounds like a bit of a road movie.</h3></tr>
+<tr><h4><i>Jenny:</i> Ha...no, but Tom is moving around a lot in the story. Mainly to get away from me - well, he can try, can't he?</h3></tr>
+<tr><h4><i>Dennis:</i> Has the title been confirmed or a release date yet?</h3></tr>
+<tr><h4><i>Jenny:</i> The movie is gonna be called "Choices" and we are looking at a release date around Christmas.</h3></tr>
+<tr><h4><i>Dennis:</i> How do you fit in the filming with your work on Daydreams? It can't be possible, can it?</h3></tr>
+<tr><h4><i>Jenny:</i> I didn't think so either. Err, well, what we did was to do my location shots at the start of filming before Daydreams started, now I am filming either in New York or a little in Chicago too.</h3></tr>
+<tr><h4><i>Dennis:</i> So you are commuting between New York and Chicago?</h3></tr>
+<tr><h4><i>Jenny:</i> Yeah....</h3></tr>
+<tr><h4><i>Dennis:</i> Oh, you don't sound....</h3></tr>
+<tr><h4><i>Jenny:</i> Well, I mean, it's not ideal. I miss Grace and Larry isn't...</h3></tr>
+<tr><h4><i>Dennis:</i> Your daughter and husband....</h3></tr>
+<tr><h4><i>Jenny:</i> Yes, being married with a child doesn't easily allow for you to be getting up at five in the morning for a flight to O'Hare. But we all know this is what I've wanted to do since I can't remember when.</h3></tr>
+<tr><h4><i>Dennis:</i> A worthwhile sacrifice, wouldn't you say?</h3></tr>
+<tr><h4><i>Jenny:</i> Oh, positive in that respect. Yeah, sure. The Chicago scenes are almost done now anyway, so I'll be in the Big Apple in a month until the end of shooting.</h3></tr>
+<tr><h4><i>Dennis:</i> Now, if we can just switch subjects a little.</h3></tr>
+<tr><h4><i>Jenny:</i> Hmm mm..</h3></tr>
+<tr><h4><i>Dennis:</i> You raked up a lot of controversy recently when you criticized Broadway's policy on using women in major productions. Were you surprised at people's reactions to that?</h3></tr>
+<tr><h4><i>Jenny:</i> In what way exactly?</h3></tr>
+<tr><h4><i>Dennis:</i> Well, it was said you were biting the hand that was feeding you and ...</h3></tr>
+<tr><h4><i>Jenny:</i> That wasn't fair.</h3></tr>
+<tr><h4><i>Dennis:</i> You don't think so?</h3></tr>
+<tr><h4><i>Jenny:</i> It was like I was supposed to keep quiet just because I worked there. Come on - get real. I work there so I have more right than anyone else to make the observations I did. You notice I called them observations, and NOT criticisms.</h3></tr>
+<tr><h4><i>Dennis:</i> Observations that were quite, erm, let's say, erm - critical.
+<tr><h4><i>Jenny:</i> I am far from being a lone voice in stating this opinion. It just happens that I'm well known, starring in a current musical, acting, erm, performing now in this movie with a star like Tom Cruise, and now the press are interested in what I have to say. Was this point any less valid two years ago when I made it?</h3></tr>
+<tr><h4><i>Dennis:</i> Which you did?</h3></tr>
+<tr><h4><i>Jenny:</i> Oh, yeah, I can find you the article, or rather the square inch, that my comments appeared in. Look, I think women are getting a raw deal on Broadway currently and I would like to see something done to ensure the huge array of very talented female performers at our disposal are given the chance to shine. That's all I want. A level playing field for everyone.</h3></tr>
+<tr><h4><i>Dennis:</i> If there are changes to these policies, will you still be around on Broadway or sipping champagne in Hollywood?</h3></tr>
+<tr><h4><i>Jenny:</i> Oh, no, my heart will always be on the stage. Doing this movie has given me a new aspect to my professional life, but I would never leave that, the theatre side of me I mean, behind.</h3></tr>
+<tr><h4><i>Dennis:</i> Jenny Longton, as always, it's been great speaking with you. The best of luck with all your projects and come back and see us as soon as possible.</h3></tr>
+<tr><h4><i>Jenny:</i> Just try and stop me! Thanks for having me on the show Dennis.</h3></tr>
+</table>
+<table>
+<td><center><a href="listening1-eng"; style="font-size:30px; color:red"><h2>Listening Test</h2></a></center></td>
+</table>
+{%endblock content%}

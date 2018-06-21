@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{%block content%}
+ <style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+  </style>
+  
+  <p align="right">Beginner &gt;&gt; English &gt;&gt; Colors</p>
+  <center><br><span style="font-size:90px; font-weight:bold; color:Gold"> &#1421;Colors&#1421;</span></br></center>
+<center>
+<table>
+{% load static %}
+<tr>
+<td><img src="{% static 'colors/Blue.png' %}" alt = "blue"></img></td>
+<td><img src="{% static 'colors/Brown.png' %}" alt = "brown"></img></td>
+<td><img src="{% static 'colors/Green.png' %}" alt = "green"></img></td>
+<td><img src="{% static 'colors/Orange.png' %}" alt = "orange"></img></td>
+<td><img src="{% static 'colors/Purple.png' %}" alt = "purple"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:blue"><h2>Blue</h2></a></center></td>
+<td><center><a style="color:brown"><h2>Brown</h2></a></center></td>
+<td><center><a style="color:green"><h2>Green</h2></a></center></td>
+<td><center><a style="color:orange"><h2>Orange</h2></a></center></td>
+<td><center><a style="color:purple"><h2>Purple</h2></a></center></td>
+</tr>
+<tr>
+<td><img src="{% static 'colors/Red.png' %}" alt = "red"></img></td>
+<td><img src="{% static 'colors/Silver.png' %}" alt = "silver"></img></td>
+<td><img src="{% static 'colors/Black.png' %}" alt = "black"></img></td>
+<td><img src="{% static 'colors/White.png' %}" alt = "white"></img></td>
+<td><img src="{% static 'colors/Yellow.png' %}" alt = "yellow"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>Red</h2></a></center></td>
+<td><center><a style="color:silver"><h2>Silver</h2></a></center></td>
+<td><center><a style="color:black"><h2>Black</h2></a></center></td>
+<td><center><a style="color:gray"><h2>White</h2></a></center></td>
+<td><center><a style="color:yellow"><h2>Yellow</h2></a></center></td>
+</tr>
+</table>
+</center>
+ </body>
+ </html>
+  {% endblock %}

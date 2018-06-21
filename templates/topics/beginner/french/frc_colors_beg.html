@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{%block content%}
+ <style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+  </style>
+  
+  <p align="right">debutant &gt;&gt; French &gt;&gt; Couleurs</p>
+  <center><br><span style="font-size:90px; font-weight:bold; color:Gold"> &#1421;Couleurs&#1421;</span></br></center>
+<center>
+<table>
+{% load static %}
+<tr>
+<td><img src="{% static 'colors/Blue.png' %}" alt = "blue"></img></td>
+<td><img src="{% static 'colors/Brown.png' %}" alt = "brown"></img></td>
+<td><img src="{% static 'colors/Green.png' %}" alt = "green"></img></td>
+<td><img src="{% static 'colors/Orange.png' %}" alt = "orange"></img></td>
+<td><img src="{% static 'colors/Purple.png' %}" alt = "purple"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:blue"><h2>Bleu</h2></a></center></td>
+<td><center><a style="color:brown"><h2>maron</h2></a></center></td>
+<td><center><a style="color:green"><h2>vert</h2></a></center></td>
+<td><center><a style="color:orange"><h2>orange</h2></a></center></td>
+<td><center><a style="color:purple"><h2>violet</h2></a></center></td>
+</tr>
+<tr>
+<td><img src="{% static 'colors/Red.png' %}" alt = "red"></img></td>
+<td><img src="{% static 'colors/Silver.png' %}" alt = "silver"></img></td>
+<td><img src="{% static 'colors/Black.png' %}" alt = "black"></img></td>
+<td><img src="{% static 'colors/White.png' %}" alt = "white"></img></td>
+<td><img src="{% static 'colors/Yellow.png' %}" alt = "yellow"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>Rouge</h2></a></center></td>
+<td><center><a style="color:silver"><h2>argent</h2></a></center></td>
+<td><center><a style="color:black"><h2>noir</h2></a></center></td>
+<td><center><a style="color:gray"><h2>blanc</h2></a></center></td>
+<td><center><a style="color:yellow"><h2>jaune</h2></a></center></td>
+</tr>
+</table>
+</center>
+
+<h3><a href="https://youtu.be/pGfgmjvKWR0" target="_blank"> Regardez une video des couleurs:)</a></h3>
+
+ </body>
+ </html>
+  {% endblock %}

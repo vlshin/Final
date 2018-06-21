@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+<head>
+ <center><br><span style="font-size:100px; font-weight:bold; color:yellow"> Welcome</span></br></center>
+ <br></br>
+ <center><br><span style="font-size:55px; font-weight:bold; color:yellow">I want to learn...</span></br></center>
+ </head>
+
+
+ <body>
+ <th> {% load static %}
+ <center><table cellpadding=30>
+   <tr>
+   <td><img src="{% static 'images/america.png' %}" alt = "en"></img></td>
+   <td><img src="{% static 'images/france.png' %}" alt = "fr"></img></td>
+   <td><img src="{% static 'images/spain.png' %}" alt = "sp"></img></td>
+   </tr>
+   <tr> 
+    <td><center><a href="testorbegEng"; style="color:red"><h2>English</h2></a></center></td>
+    <td><center><a href="testorbegFrc"; style="color:red"><h2>French</h2></a></center></td>
+    <td><center><a href="testorbegSpa"; style="color:red"><h2>Spanish</h2></a></center></td>
+   
+  </tr>
+ </table> </center>
+ 
+</div> 
+</body>
+</html>
+{% endblock %}

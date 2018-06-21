@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<p><strong><h2>Please write the required information</h2></strong></p>
+<br />
+    <label for="Username">Username</label>
+    <input type="text" name="Username" />
+ <br />
+ <br />
+    <label for="email">E-Mail</label>
+    <input type="text" name="email" id="email" />
+  <br />
+ <br />
+   <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+  <p>
+    <input type="submit" name="submit" value="Save" />
+    <input type="reset" value="Reset" />
+  </p>
+</form>
+
+{% endblock %}

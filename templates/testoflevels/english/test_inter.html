@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<script language="JavaScript">
+<!-- Hide JavaScript from Java-Impaired Browsers
+l=0;
+function dataBase(test) {
+     var counter=0;
+     if (test.q1[0].checked) {counter++;}
+     if (test.q2[1].checked) {counter++;}
+     if (test.q3[0].checked) {counter++;}
+     if (test.q4[1].checked) {counter++;}
+     if (test.q5[2].checked) {counter++;}
+
+   if (l==0)
+     {
+   counter=counter;
+       }
+       else
+       {
+       counter=0;
+       }
+       l=l+1;
+     document.test.display.value = counter;
+}
+
+// End Hiding Script -->
+</script>
+</head><body bgcolor="#a6caf0">
+<center>
+<h1>Writing Test</h1>
+<h2> Read the sentences and choose the correct one.</h2>
+<form method="post" name="test">
+<!--ENCTYPE="text/plain"-->
+<hr width="75">
+
+<h3>1.  <strong>
+<input name="q1" value="11" type="radio">Are you French?
+<input name="q1" value="12" type="radio">You is French?
+<input name="q1" value="13" type="radio">You are French.
+</strong></p>
+</div><hr>
+<h3>2.<strong>
+<input name="q2" value="21" type="radio">These pencil case here is mine.
+<input name="q2" value="22" type="radio">This pencil case here is mine.
+<input name="q2" value="23" type="radio">That pencil here is mine.
+</strong></p>
+</div><hr>
+<h3>3. <strong>
+<input name="q3" value="31" type="radio">I watch TV to relax.
+<input name="q3" value="32" type="radio">I watch TV for to relax.
+<input name="q3" value="33" type="radio">I watch Tv for relax.
+</strong></p>
+</div><hr>
+<h3>4. <strong>
+<input name="q4" value="41" type="radio">I'll to be a vet when I grow up. 
+<input name="q4" value="42" type="radio">I'll be a vet when I grow up. 
+<input name="q4" value="43" type="radio">I am a vet when iI grow up.
+</strong></p>
+</div><hr>
+<h3>5.<strong>
+<input name="q5" value="51" type="radio">I wented to the park yesterday.
+<input name="q5" value="52" type="radio">I goed to the park yesterday.
+<input name="q5" value="53" type="radio">I went to the park yesterday
+</strong></p>
+</div><hr>
+ 
+</strong></p>
+</div><hr>
+<table>
+<tbody><tr>
+<td colspan="3"><div align="center"><p><strong><hr>Press button &nbsp; to finish test:</strong></p></div></td>
+</tr>
+<tr align="center">
+<td><strong><input name="check" onclick="dataBase(this.form)" value=" Check " type="button"></strong></td>
+<td><strong><textarea cols="6" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
+ 
+</tr>
+</tbody></table>
+<input name='back' type='button' value='Home' onclick='javascript:history.go(-5);'>
+</form></center>
+</body></html>
+{% endblock %}

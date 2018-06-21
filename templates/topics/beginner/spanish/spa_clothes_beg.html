@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+</style>
+</head>
+<body>
+
+  <p align="right">principiante &gt;&gt; Espanol &gt;&gt; vestidos</p>
+ <center><br><span style="font-size:90px; font-weight:bold; color:Gold"> &#1421;Vestidos&#1421;</span></br></center>
+ <br></br>
+ <center><br></br>
+ 
+<table>
+{% load static %}
+<tr>
+<td><img src="{% static 'clothes/Boots.png' %}" alt = "boots"></img></td>
+<td><img src="{% static 'clothes/Coat.png' %}" alt = "coat"></img></td>
+<td><img src="{% static 'clothes/Jacket.png' %}" alt = "jacket"></img></td>
+<td><img src="{% static 'clothes/Pijama.png' %}" alt = "pijama"></img></td>
+<td><img src="{% static 'clothes/Shoes.png' %}" alt = "shoes"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:blue"><h2>Botas</h2></a></center></td>
+<td><center><a style="color:brown"><h2>Abrigo</h2></a></center></td>
+<td><center><a style="color:green"><h2>Chaqueta</h2></a></center></td>
+<td><center><a style="color:orange"><h2>Pijama</h2></a></center></td>
+<td><center><a style="color:purple"><h2>Zapatos</h2></a></center></td>
+</tr>
+<tr>
+<td><img src="{% static 'clothes/Shorts.png' %}" alt = "shorts"></img></td>
+<td><img src="{% static 'clothes/Socks.png' %}" alt = "socks"></img></td>
+<td><img src="{% static 'clothes/Sweater.png' %}" alt = "sweater"></img></td>
+<td><img src="{% static 'clothes/TrousersJeans.png' %}" alt = "trousersjeans"></img></td>
+<td><img src="{% static 'clothes/T-Shirt.png' %}" alt = "t-shirt"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>Pantalones cortos</h2></a></center></td>
+<td><center><a style="color:silver"><h2>Calcetines</h2></a></center></td>
+<td><center><a style="color:black"><h2>Sueter</h2></a></center></td>
+<td><center><a style="color:pink"><h2>Pantalones Jeans</h2></a></center></td>
+<td><center><a style="color:yellow"><h2>Camiseta</h2></a></center></td>
+</tr>
+</table>
+</center>
+<h3><a href="https://youtu.be/_PY_KVS_Qmk" target="_blank"> ver un video sobre los vestidos</a></h3>
+ </body>
+ </html>
+ {% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{%block content%}
+<html>
+<head>
+<style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+</style>
+</head>
+<body>
+
+  <p align="right">Beginner &gt;&gt; English &gt;&gt; Alphabet</p>
+ <center><br><span style="font-size:90px; font-weight:bold; color:pink"> Alphabet </span></br></center>
+ <br></br>
+ <center>
+ <h2>The English alphabet has 26 letters.We can write each letter as a "large letter" (capital) or "small letter". </h2>
+ <h2>In "alphabetical order", they are: </h2>
+ </center>
+ <center><table cellspacing="50">
+ <td>
+ {% load static %}
+ <tr>
+<td><img src="{% static 'alphabet/a.png' %}" alt = "A"></img></td>
+<td><img src="{% static 'alphabet/b.png' %}" alt = "B"></img></td>
+<td><img src="{% static 'alphabet/c.png' %}" alt = "C"></img></td>
+
+</tr>
+<tr>
+
+<td><center><h2>A for Apple</h2></a></center></td>
+<td><center><h2>B for Boy</h2></a></center></td>
+<td><center><h2>C for Cat</h2></a></center></td>
+
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/d.png' %}" alt = "D"></img></td>
+<td><img src="{% static 'alphabet/e.png' %}" alt = "E"></img></td>
+<td><img src="{% static 'alphabet/f.png' %}" alt = "F"></img></td>
+
+</tr>
+<tr>
+<td><center><h2>D for Duck</h2></a></center></td>
+<td><center><h2>E for Egg</h2></a></center></td>
+<td><center><h2>F for Fish</h2></a></center></td>
+
+</tr>
+ <tr>
+ <td><img src="{% static 'alphabet/g.png' %}" alt = "G"></img></td>
+<td><img src="{% static 'alphabet/h.png' %}" alt = "H"></img></td>
+<td><img src="{% static 'alphabet/i.png' %}" alt = "I"></img></td>
+
+</tr>
+<tr>
+<td><center><h2>G for Girl</h2></a></center></td>
+<td><center><h2>H for Hat</h2></a></center></td>
+<td><center><h2>I for Iguana</h2></a></center></td>
+
+</tr>
+<tr>
+<td><img src="{% static 'alphabet/j.png' %}" alt = "J"></img></td>
+<td><img src="{% static 'alphabet/k.png' %}" alt = "K"></img></td>
+<td><img src="{% static 'alphabet/l.png' %}" alt = "L"></img></td>
+</tr>
+<tr>
+<td><center><h2>J for Jelly</h2></a></center></td>
+<td><center><h2>K for Kite</h2></a></center></td>
+<td><center><h2>L for Lion</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/m.png' %}" alt = "M"></img></td>
+<td><img src="{% static 'alphabet/n.png' %}" alt = "N"></img></td>
+<td><img src="{% static 'alphabet/o.png' %}" alt = "O"></img></td>
+
+</tr>
+<tr>
+<td><center><h2>M for Moon</h2></a></center></td>
+<td><center><h2>N for Net</h2></a></center></td>
+<td><center><h2>O for Octopus</h2></a></center></td>
+
+</tr>
+ <tr>
+ <td><img src="{% static 'alphabet/p.png' %}" alt = "P"></img></td>
+<td><img src="{% static 'alphabet/q.png' %}" alt = "Q"></img></td>
+<td><img src="{% static 'alphabet/r.png' %}" alt = "R"></img></td>
+
+</tr>
+<tr>
+<td><center><h2>P for Pizza</h2></a></center></td>
+<td><center><h2>Q for Queen</h2></a></center></td>
+<td><center><h2>R for Rabbit</h2></a></center></td>
+
+</tr>
+ <tr>
+ <td><img src="{% static 'alphabet/s.png' %}" alt = "S"></img></td>
+<td><img src="{% static 'alphabet/t.png' %}" alt = "T"></img></td>
+<td><img src="{% static 'alphabet/u.png' %}" alt = "U"></img></td>
+
+</tr>
+<tr>
+<td><center><h2>S for Sun</h2></a></center></td>
+<td><center><h2>T for Table</h2></a></center></td>
+<td><center><h2>U for Umbrella</h2></a></center></td>
+
+</tr>
+<tr>
+<td><img src="{% static 'alphabet/v.png' %}" alt = "V"></img></td>
+<td><img src="{% static 'alphabet/w.jpg' %}" alt = "W"></img></td>
+<td><img src="{% static 'alphabet/x.png' %}" alt = "X"></img></td>
+</tr>
+<tr>
+<td><center><h2>V for Van</h2></a></center></td>
+<td><center><h2>W for Window</h2></a></center></td>
+<td><center><h2>X for Xenic</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/y.png' %}" alt = "Y"></img></td>
+<td><img src="{% static 'alphabet/z.png' %}" alt = "Z"></img></td>
+</tr>
+<tr>
+<td><center><h2>Y for Yogurt</h2></a></center></td>
+<td><center><h2>Z for Zebra</h2></a></center></td>
+</tr>
+ </table>
+ 
+ 
+ <h3><a href="https://www.youtube.com/watch?time_continue=20&v=qh_WU5tSv58" target="_blank"> Watch this Alphabet video</a></h3>
+
+</center>
+ </body>
+ </html>
+ {% endblock %}
+

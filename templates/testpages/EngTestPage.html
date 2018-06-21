@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<script language="JavaScript">
+<!-- Hide JavaScript from Java-Impaired Browsers
+l=0;
+function dataBase(test) {
+     var counter=0;
+     if (test.q1[1].checked) {counter++;}
+     if (test.q2[3].checked) {counter++;}
+     if (test.q3[1].checked) {counter++;}
+     if (test.q4[1].checked) {counter++;}
+     if (test.q5[1].checked) {counter++;}
+
+   if (l==0)
+     {
+   counter=counter;
+       }
+       else
+       {
+       counter=0;
+       }
+       l=l+1;
+     document.test.display.value = counter;
+}
+
+// End Hiding Script -->
+</script>
+</head><body bgcolor="#a6caf0">
+<center>
+<h1>English Level Test</h1>
+
+<form method="post" name="test">
+<!--ENCTYPE="text/plain"-->
+<hr width="75">
+<h3>1.   Tom (___) learning English</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q1" value="11" type="radio">am
+<input name="q1" value="12" type="radio">is
+<input name="q1" value="13" type="radio">are
+<input name="q1" value="14" type="radio">be
+</strong></p>
+</div><hr>
+<h3>2.(___) there a restaurant near here ?</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q2" value="21" type="radio">are
+<input name="q2" value="22" type="radio">have
+<input name="q2" value="23" type="radio">do
+<input name="q2" value="24" type="radio">is
+</strong></p>
+</div><hr>
+<h3>3. I didn't (___) TV last night</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q3" value="31" type="radio">Not watched
+<input name="q3" value="32" type="radio">watch
+<input name="q3" value="33" type="radio">watching
+<input name="q3" value="34" type="radio">watched
+</strong></p>
+</div><hr>
+<h3>4. Look ! The bus (___)</h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q4" value="41" type="radio">leaves
+<input name="q4" value="42" type="radio">is leaving
+<input name="q4" value="43" type="radio">does leave
+<input name="q4" value="44" type="radio">is leave
+</strong></p>
+</div><hr>
+<h3>5.I've never (___) to England </h3><div align="left"><p style="margin-left: 550px;"><strong>
+<input name="q5" value="51" type="radio">been
+<input name="q5" value="52" type="radio">went
+<input name="q5" value="53" type="radio">going
+<input name="q5" value="54" type="radio">go
+</strong></p>
+</div><hr>
+</strong></p>
+</div><hr>
+<table>
+<tbody><tr>
+<td colspan="3"><div align="center"><p><strong><hr>Press button &nbsp; to finish test:</strong></p></div></td>
+</tr>
+<tr align="center">
+<td><strong><input name="check" onclick="dataBase(this.form)" value=" Check " type="button"></strong></td>
+<td><strong><textarea cols="6" name="display" rows="1" wrap="VIRTUAL"></textarea></strong></td>
+</tr>
+</tbody></table>
+</form></center>
+</body></html>
+<center>
+<h3>"5"-advanced  "4"-intermediate  "3"or less-beginner </h3>
+
+<a href="english/beginner/topics"><button class="button"><span>Beg</span></button></a>
+<a href="english/int/topics"><button class="button"><span>Intermediate</span></button></a>
+<a href="english/adv/topics"><button class="button"><span>Advanced</span></button></a>
+</center>
+
+{% endblock %}

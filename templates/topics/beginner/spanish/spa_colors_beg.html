@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{%block content%}
+ <style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+  </style>
+  
+  <p align="right">Principiante &gt;&gt; Espanol &gt;&gt; Colores</p>
+  <center><br><span style="font-size:90px; font-weight:bold; color:Red"> &#1421;Colores&#1421;</span></br></center>
+<center>
+<table>
+{% load static %}
+<tr>
+<td><img src="{% static 'colors/Blue.png' %}" alt = "blue"></img></td>
+<td><img src="{% static 'colors/Brown.png' %}" alt = "brown"></img></td>
+<td><img src="{% static 'colors/Green.png' %}" alt = "green"></img></td>
+<td><img src="{% static 'colors/Orange.png' %}" alt = "orange"></img></td>
+<td><img src="{% static 'colors/Purple.png' %}" alt = "purple"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:blue"><h2>azul</h2></a></center></td>
+<td><center><a style="color:brown"><h2>marron</h2></a></center></td>
+<td><center><a style="color:green"><h2>verde</h2></a></center></td>
+<td><center><a style="color:orange"><h2>naranja</h2></a></center></td>
+<td><center><a style="color:purple"><h2>Purpura</h2></a></center></td>
+</tr>
+<tr>
+<td><img src="{% static 'colors/Red.png' %}" alt = "red"></img></td>
+<td><img src="{% static 'colors/Silver.png' %}" alt = "silver"></img></td>
+<td><img src="{% static 'colors/Black.png' %}" alt = "black"></img></td>
+<td><img src="{% static 'colors/White.png' %}" alt = "white"></img></td>
+<td><img src="{% static 'colors/Yellow.png' %}" alt = "yellow"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>Rojo</h2></a></center></td>
+<td><center><a style="color:silver"><h2>color plateado</h2></a></center></td>
+<td><center><a style="color:black"><h2>negro</h2></a></center></td>
+<td><center><a style="color:gray"><h2>blanco</h2></a></center></td>
+<td><center><a style="color:yellow"><h2>amarillo</h2></a></center></td>
+</tr>
+</table>
+</center>
+
+<h3><a href="https://youtu.be/pGfgmjvKWR0" target="_blank"> ver un video sobre los colores</a></h3>
+
+ </body>
+ </html>
+  {% endblock %}

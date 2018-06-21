@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+</style>
+</head>
+<body>
+
+  <p align="right">debutant &gt;&gt; French &gt;&gt; Vetements</p>
+ <center><br><span style="font-size:90px; font-weight:red; color:Gold"> &#1421;Vetements&#1421;</span></br></center>
+ <br></br>
+ <center><br></br>
+ 
+<table>
+{% load static %}
+<tr>
+<td><img src="{% static 'clothes/Boots.png' %}" alt = "bottes"></img></td>
+<td><img src="{% static 'clothes/Coat.png' %}" alt = "coat"></img></td>
+<td><img src="{% static 'clothes/Jacket.png' %}" alt = "jacket"></img></td>
+<td><img src="{% static 'clothes/Pijama.png' %}" alt = "pijama"></img></td>
+<td><img src="{% static 'clothes/Shoes.png' %}" alt = "shoes"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:blue"><h2>Bottes</h2></a></center></td>
+<td><center><a style="color:brown"><h2>Manteau</h2></a></center></td>
+<td><center><a style="color:green"><h2>Veste</h2></a></center></td>
+<td><center><a style="color:orange"><h2>Pijama</h2></a></center></td>
+<td><center><a style="color:purple"><h2>chaussures</h2></a></center></td>
+</tr>
+<tr>
+<td><img src="{% static 'clothes/Shorts.png' %}" alt = "shorts"></img></td>
+<td><img src="{% static 'clothes/Socks.png' %}" alt = "socks"></img></td>
+<td><img src="{% static 'clothes/Sweater.png' %}" alt = "sweater"></img></td>
+<td><img src="{% static 'clothes/TrousersJeans.png' %}" alt = "trousersjeans"></img></td>
+<td><img src="{% static 'clothes/T-Shirt.png' %}" alt = "t-shirt"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>Shorts</h2></a></center></td>
+<td><center><a style="color:silver"><h2>Chaussettes</h2></a></center></td>
+<td><center><a style="color:black"><h2>Pull-over</h2></a></center></td>
+<td><center><a style="color:pink"><h2>Pantalons</h2></a></center></td>
+<td><center><a style="color:yellow"><h2>T-Shirt</h2></a></center></td>
+</tr>
+</table>
+</center>
+
+<h3><a href="https://youtu.be/_WgLNIOPKCQ" target="_blank"> regardez une video sur les vetements</a></h3>
+
+ </body>
+ </html>
+ {% endblock %}

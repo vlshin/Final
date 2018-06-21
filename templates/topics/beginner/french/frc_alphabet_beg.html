@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{%block content%}
+<html>
+<head>
+<style>
+   p { 
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
+  
+   }
+</style>
+</head>
+<body>
+
+  <p align="right">debutant &gt;&gt; Francais &gt;&gt; Alphabet</p>
+ <center><br><span style="font-size:90px; font-weight:bold; color:pink"> Alphabet </span></br></center>
+ <br></br>
+ <h2>L'alphabet francais a 26 lettres. Nous pouvons ecrire chaque lettre comme une "grande lettre" (capitale) ou une "petite lettre". Dans "ordre alphabetique", ils sont: </h2>
+ <center><table>
+ <td>
+ {% load static %}
+ <tr>
+<td><img src="{% static 'alphabet/a.png' %}" alt = "A"></img></td>
+<td><img src="{% static 'alphabet/b.png' %}" alt = "B"></img></td>
+<td><img src="{% static 'alphabet/c.png' %}" alt = "C"></img></td>
+<td><img src="{% static 'alphabet/d.png' %}" alt = "D"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>A Pour arbre</h2></a></center></td>
+<td><center><a style="color:silver"><h2>B pour banane</h2></a></center></td>
+<td><center><a style="color:black"><h2>C pour cahier</h2></a></center></td>
+<td><center><a style="color:pink"><h2>D pour dent</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/e.png' %}" alt = "E"></img></td>
+<td><img src="{% static 'alphabet/f.png' %}" alt = "F"></img></td>
+<td><img src="{% static 'alphabet/g.png' %}" alt = "G"></img></td>
+<td><img src="{% static 'alphabet/h.png' %}" alt = "H"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>E pour escalier</h2></a></center></td>
+<td><center><a style="color:silver"><h2>F pour femme</h2></a></center></td>
+<td><center><a style="color:black"><h2>G pour garcon </h2></a></center></td>
+<td><center><a style="color:pink"><h2>H pour homme</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/i.png' %}" alt = "I"></img></td>
+<td><img src="{% static 'alphabet/j.png' %}" alt = "J"></img></td>
+<td><img src="{% static 'alphabet/k.png' %}" alt = "K"></img></td>
+<td><img src="{% static 'alphabet/l.png' %}" alt = "L"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>I pour image</h2></a></center></td>
+<td><center><a style="color:silver"><h2>J pour jaguar</h2></a></center></td>
+<td><center><a style="color:black"><h2>K pour kilo</h2></a></center></td>
+<td><center><a style="color:pink"><h2>L pour lion</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/m.png' %}" alt = "M"></img></td>
+<td><img src="{% static 'alphabet/n.png' %}" alt = "N"></img></td>
+<td><img src="{% static 'alphabet/o.png' %}" alt = "O"></img></td>
+<td><img src="{% static 'alphabet/p.png' %}" alt = "P"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>M pour mairie</h2></a></center></td>
+<td><center><a style="color:silver"><h2>N pour narine</h2></a></center></td>
+<td><center><a style="color:black"><h2>O pour object</h2></a></center></td>
+<td><center><a style="color:pink"><h2>P pour Pizza</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/q.png' %}" alt = "Q"></img></td>
+<td><img src="{% static 'alphabet/r.png' %}" alt = "R"></img></td>
+<td><img src="{% static 'alphabet/s.png' %}" alt = "S"></img></td>
+<td><img src="{% static 'alphabet/t.png' %}" alt = "T"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>Q pour quartier</h2></a></center></td>
+<td><center><a style="color:silver"><h2>R pour radio</h2></a></center></td>
+<td><center><a style="color:black"><h2>S pour sable</h2></a></center></td>
+<td><center><a style="color:pink"><h2>T pour table</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/u.png' %}" alt = "U"></img></td>
+<td><img src="{% static 'alphabet/v.png' %}" alt = "V"></img></td>
+<td><img src="{% static 'alphabet/w.jpg' %}" alt = "W"></img></td>
+<td><img src="{% static 'alphabet/x.png' %}" alt = "X"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:red"><h2>U pour ultime</h2></a></center></td>
+<td><center><a style="color:silver"><h2>V pour Van</h2></a></center></td>
+<td><center><a style="color:black"><h2>W pour wagon</h2></a></center></td>
+<td><center><a style="color:red"><h2>X pour Xilophone</h2></a></center></td>
+</tr>
+ <tr>
+<td><img src="{% static 'alphabet/y.png' %}" alt = "Y"></img></td>
+<td><img src="{% static 'alphabet/z.png' %}" alt = "Z"></img></td>
+</tr>
+<tr>
+<td><center><a style="color:silver"><h2>Y pour Yaourt</h2></a></center></td>
+<td><center><a style="color:black"><h2>Z pour Zebre</h2></a></center></td>
+</tr>
+ </table>
+ 
+ 
+ <h3><a href="https://youtu.be/mydYJMq3PV0" target="_blank"> regardez une video sur l'alphabet</a></h3>
+
+</center>
+ </body>
+ </html>
+ {% endblock %}
